@@ -1,5 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* @font-face {
+  font-family: "MyCustomFont";
+  src: url("./assets/against/against_italic.otf") format("otf"),
+    url("./assets/against/against_italic.ttf") format("ttf");
+  font-weight: normal;
+  font-style: italic;
+} */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Regular";
+    src: local("against_regular"),
+      url("./assets/fonts/against_regular.otf") format("truetype"),
+      url("./assets/fonts/against_regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+}

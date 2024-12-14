@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Roboto', 'sans-serif'], // Thêm Roboto vào font mặc định
+        sans: ['Roboto', 'sans-serif'],
+        customRegular: ['Regular']// Thêm Roboto vào font mặc định
       }
     },
   },
