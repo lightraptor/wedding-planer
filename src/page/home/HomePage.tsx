@@ -43,7 +43,7 @@ const SectionItem = ({
 }) => (
   <div className="relative">
     <img src={imgSrc} alt={title.toLowerCase()} />
-    <div className="absolute inset-0 flex flex-col justify-center items-center text-white p-6">
+    <div className="absolute inset-0 flex flex-col justify-center items-center text-white p-6 max-w-[300px] md:max-w-[365px]">
       <span className="text-8xl font-light leading-none tracking-normal font-customRegular">
         {number}.
       </span>

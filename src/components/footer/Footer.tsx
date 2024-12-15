@@ -3,7 +3,7 @@ import logoImg from "../../assets/wedding-logo.png";
 
 export const Footer = () => {
   return (
-    <footer className="py-10 px-5 md:px-10 bg-primary text-white">
+    <footer className=" p-8 md:p-24 bg-primary text-white">
       <div className="">
         <div className="flex flex-col md:flex-row justify-between w-full md:w-auto">
           <div className="mb-3 md:mb-0 md:mr-20">
@@ -38,7 +38,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="text-center md:text-base mt-10 font-extralight">
+      <div className="text-center md:text-base md:mt-24 mt-7 font-extralight">
         All right reserved QUÝ PLANNER 2024
       </div>
     </footer>
