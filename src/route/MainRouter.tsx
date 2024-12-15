@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { HomePage } from "../page";
+import { ContactPage, HomePage } from "../page";
 import { ROUTES } from "../defines";
 import { Layout } from "../components";
 
@@ -10,6 +10,14 @@ export const MainRouter = () => {
       element: (
         <Layout>
           <HomePage />
+        </Layout>
+      ),
+    },
+    {
+      path: ROUTES.Contact.path,
+      element: (
+        <Layout>
+          <ContactPage />
         </Layout>
       ),
     },
