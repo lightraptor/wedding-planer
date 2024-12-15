@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],
         customRegular: ['Regular']// Thêm Roboto vào font mặc định
+      },
+      colors: {
+        primary: '#515252'
       }
     },
   },
