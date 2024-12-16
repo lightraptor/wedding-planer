@@ -76,7 +76,7 @@ export const EventDesPage = () => {
         </Link>
       </div>
       <img src={eventDesImg} alt="" className="w-full" />
-      <div className="container mx-auto p-16 mt-24 text-primary">
+      <div className="container mx-auto p-16 my-24 text-primary">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16">
           {services.slice(0, 10).map((service, index) => (
             <div>

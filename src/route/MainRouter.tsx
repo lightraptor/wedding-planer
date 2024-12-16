@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import {
   ContactPage,
   HomePage,
+  MicePage,
   ServicePage,
   SustainabilityPage,
   WeddingPage,
@@ -57,6 +58,14 @@ export const MainRouter = () => {
       element: (
         <Layout>
           <SustainabilityPage />
+        </Layout>
+      ),
+    },
+    {
+      path: SERVICES.MICE.path,
+      element: (
+        <Layout>
+          <MicePage />
         </Layout>
       ),
     },
