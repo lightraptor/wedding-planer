@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import {
   ContactPage,
+  DmcPage,
   HomePage,
   MicePage,
   ServicePage,
@@ -66,6 +67,14 @@ export const MainRouter = () => {
       element: (
         <Layout>
           <MicePage />
+        </Layout>
+      ),
+    },
+    {
+      path: SERVICES.DestinationManagementCompany.path,
+      element: (
+        <Layout>
+          <DmcPage />
         </Layout>
       ),
     },
