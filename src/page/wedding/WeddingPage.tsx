@@ -12,20 +12,31 @@ import { Link } from "react-router-dom";
 export const WeddingPage = () => {
   return (
     <>
-      <img src={imgFeature} alt="" className="mt-24" />
-      <div className="flex flex-row p-24 justify-between">
-        <p className="text-5xl font-customRegular w-[60%] leading-normal text-primary tracking-[0.1em]">
+      {/* Hình ảnh header */}
+      <img src={imgFeature} alt="Feature Image" className="mt-24 w-full" />
+
+      {/* Tiêu đề */}
+      <div className="flex flex-col lg:flex-row p-8 lg:p-24 justify-between items-center text-center lg:text-left">
+        <p className="text-2xl lg:text-5xl font-customRegular lg:w-[60%] leading-normal text-primary tracking-[0.1em]">
           FEATURED WEDDINGS & SPECIAL EVENTS
         </p>
-        <Link to="/service">
+        <Link to="/service" className="mt-8 lg:mt-0">
           <button>
-            <img src={leftArrow} alt="" className="w-20 h-20" />
+            <img
+              src={leftArrow}
+              alt="Back"
+              className="w-14 h-14 lg:w-20 lg:h-20"
+            />
           </button>
         </Link>
       </div>
-      <img src={imgFeature2} alt="" className="w-full" />
-      <div className="container p-20 font-light text-primary font-san text-[26px] mx-auto">
-        <p className="w-[80%] mx-auto text-left leading-tight mb-14">
+
+      {/* Hình ảnh chính */}
+      <img src={imgFeature2} alt="Feature Image 2" className="w-full" />
+
+      {/* Nội dung mô tả */}
+      <div className="container p-8 lg:p-20 font-light text-primary font-san text-base lg:text-[26px] mx-auto">
+        <p className="w-full lg:w-[80%] mx-auto text-left leading-relaxed lg:leading-tight mb-8 lg:mb-14">
           Our full-service planning approach is the epitome of elegance and
           precision, tailored to bring your unique love story to life. Our
           expertise lies not just in meticulous planning and styling for wedding
@@ -36,7 +47,7 @@ export const WeddingPage = () => {
           dedicated team meticulously styles each element of your event,
           creating an enchanting ambiance that resonates with sophistication.
         </p>
-        <p className="w-[80%] mx-auto text-left leading-tight">
+        <p className="w-full lg:w-[80%] mx-auto text-left leading-relaxed lg:leading-tight">
           With QUÝ PLANNER, experience the pinnacle of luxury in wedding
           planning, both locally and globally, and embark on a journey filled
           with elegance, style, and unforgettable memories. Our commitment is to
@@ -44,9 +55,13 @@ export const WeddingPage = () => {
           your wedding an elegant, stylish, and unforgettable celebration.
         </p>
       </div>
-      <div className="w-[548px] h-[1px] bg-primary mx-auto text-center my-24"></div>
+
+      {/* Đường kẻ */}
+      <div className="w-[100px] lg:w-[548px] h-[1px] bg-primary mx-auto my-12 lg:my-24"></div>
+
+      {/* Hình ảnh sự kiện */}
       <div className="w-full p-20 mb-20">
-        <div className="flex flex-row gap-3 h-[500px]">
+        <div className="flex flex-col md:flex-row gap-3 md:h-[500px]">
           <div className="item flex flex-col">
             <div className="">
               <img
@@ -59,7 +74,7 @@ export const WeddingPage = () => {
               </p>
             </div>
           </div>
-          <div className="item flex flex-col-reverse">
+          <div className="item flex-col flex md:flex-col-reverse">
             <div className="">
               <img
                 src={weddingImg2}
@@ -83,7 +98,7 @@ export const WeddingPage = () => {
               </p>
             </div>
           </div>
-          <div className="item flex flex-col-reverse">
+          <div className="item flex md:flex-col-reverse">
             <div className="">
               <img
                 src={weddingImg4}

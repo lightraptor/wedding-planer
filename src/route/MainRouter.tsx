@@ -11,6 +11,7 @@ import {
 import { ROUTES, SERVICES } from "../defines";
 import { Layout } from "../components";
 import { EventDesPage } from "../page/eventDes";
+import { AboutPage } from "../page/about";
 
 export const MainRouter = () => {
   const router = createBrowserRouter([
@@ -27,6 +28,14 @@ export const MainRouter = () => {
       element: (
         <Layout>
           <ContactPage />
+        </Layout>
+      ),
+    },
+    {
+      path: ROUTES.About.path,
+      element: (
+        <Layout>
+          <AboutPage />
         </Layout>
       ),
     },

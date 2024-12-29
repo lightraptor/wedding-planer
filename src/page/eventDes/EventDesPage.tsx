@@ -64,43 +64,44 @@ export const EventDesPage = () => {
   ];
   return (
     <>
-      <img src={eventDesImg1} alt="" className="mt-24 px-40" />
-      <div className="flex flex-row p-24 justify-between">
-        <p className="text-5xl font-customRegular w-[60%] leading-normal text-primary tracking-[0.1em]">
+      <img
+        src={eventDesImg1}
+        alt=""
+        className="mt-12 px-6 sm:mt-24 sm:px-40 w-full"
+      />
+      <div className="flex flex-col sm:flex-row p-6 sm:p-24 justify-between items-center">
+        <p className="text-3xl sm:text-5xl font-customRegular sm:w-[60%] leading-relaxed text-primary tracking-[0.1em] text-center sm:text-left">
           EVENT DESIGN & PRODUCTION
         </p>
         <Link to="/service">
-          <button>
-            <img src={leftArrow} alt="" className="w-20 h-20" />
+          <button className="mt-4 sm:mt-0">
+            <img src={leftArrow} alt="" className="w-12 h-12 sm:w-20 sm:h-20" />
           </button>
         </Link>
       </div>
       <img src={eventDesImg} alt="" className="w-full" />
-      <div className="container mx-auto p-16 my-24 text-primary">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16">
+      <div className="container mx-auto px-6 sm:p-16 my-12 sm:my-24 text-primary">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 sm:gap-x-16 gap-y-8">
           {services.slice(0, 10).map((service, index) => (
-            <div>
-              <div
-                key={index}
-                className="border rounded-3xl border-primary p-8 text-center"
-              >
-                <h2 className="font-medium text-3xl font-sans">
+            <div key={index}>
+              <div className="border rounded-3xl border-primary p-6 sm:p-8 text-center">
+                <h2 className="font-medium text-xl sm:text-3xl font-sans">
                   {service.title}
                 </h2>
               </div>
-              <p className="font-sans font-light text-2xl text-center my-6">
+              <p className="font-sans font-light text-lg sm:text-2xl text-center my-4 sm:my-6">
                 {service.description}
               </p>
             </div>
           ))}
         </div>
-        <div className=" w-[60%] mx-auto">
-          <div className="border rounded-3xl border-primary p-8 text-center">
-            <h2 className="font-medium text-3xl font-sans">
+        <div className="w-full sm:w-[60%] mx-auto mt-8">
+          <div className="border rounded-3xl border-primary p-6 sm:p-8 text-center">
+            <h2 className="font-medium text-xl sm:text-3xl font-sans">
               {services[10].title}
             </h2>
           </div>
-          <p className="font-sans font-light text-2xl text-center my-6">
+          <p className="font-sans font-light text-lg sm:text-2xl text-center my-4 sm:my-6">
             {services[10].description}
           </p>
         </div>
